@@ -16,6 +16,6 @@ Case
 				select o.PRICING_ID,r.RAT_RATSTARS,r.ORD_ID from rating r,`order` o where r.ORD_ID=o.ORD_ID
 			) as Q on q.PRICING_ID=s.PRICING_ID order by ORD_ID
 		) as A on a.SUPP_ID=s.SUPP_ID group by Supplier_Id;displaySupplierDetails
-End &&
-
+End //
+DELIMITER ;
 call displaySupplierDetails;
