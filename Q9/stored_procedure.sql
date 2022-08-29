@@ -18,4 +18,5 @@ Case
 		) as A on a.SUPP_ID=s.SUPP_ID group by Supplier_Id;displaySupplierDetails
 End //
 DELIMITER ;
+
 call displaySupplierDetails;
